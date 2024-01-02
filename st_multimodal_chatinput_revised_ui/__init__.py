@@ -38,6 +38,6 @@ def multimodal_chatinput(default=None, disabled=False, key=None):
         }
         This dictionary contains the paths of the uploaded images and the text currently present in the chat input. The 'uploadedImages' key is a list of strings representing the uploaded images, and 'textInput' is a string representing the current text input.
     """
-    component_value = _component_func(disabled=disabled, default=default)
+    component_value = _component_func(disabled=disabled, default=default, key=key)
 
     return component_value
