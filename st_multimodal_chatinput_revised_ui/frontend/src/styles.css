@@ -1,0 +1,4 @@
+.img_input:focus,.img_input:focus-visible{
+    border: 1px solid gray;
+    outline: none;
+}

@@ -143,14 +143,13 @@ class MultimodalChatInput extends StreamlitComponentBase<State> {
                   border: "none",
                   width: "15px",
                   height: "15px",
-                  fontSize: "15px",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
                   ...(isdisabled ? this.disabledStyle : {}),
                 }}
               >
-                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="11" viewBox="0 0 352 512"><path d="M242.7 256l100.1-100.1c12.3-12.3 12.3-32.2 0-44.5l-22.2-22.2c-12.3-12.3-32.2-12.3-44.5 0L176 189.3 75.9 89.2c-12.3-12.3-32.2-12.3-44.5 0L9.2 111.5c-12.3 12.3-12.3 32.2 0 44.5L109.3 256 9.2 356.1c-12.3 12.3-12.3 32.2 0 44.5l22.2 22.2c12.3 12.3 32.2 12.3 44.5 0L176 322.7l100.1 100.1c12.3 12.3 32.2 12.3 44.5 0l22.2-22.2c12.3-12.3 12.3-32.2 0-44.5L242.7 256z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="11" viewBox="0 0 352 512" color="white" scale="2"><path d="M242.7 256l100.1-100.1c12.3-12.3 12.3-32.2 0-44.5l-22.2-22.2c-12.3-12.3-32.2-12.3-44.5 0L176 189.3 75.9 89.2c-12.3-12.3-32.2-12.3-44.5 0L9.2 111.5c-12.3 12.3-12.3 32.2 0 44.5L109.3 256 9.2 356.1c-12.3 12.3-12.3 32.2 0 44.5l22.2 22.2c12.3 12.3 32.2 12.3 44.5 0L176 322.7l100.1 100.1c12.3 12.3 32.2 12.3 44.5 0l22.2-22.2c12.3-12.3 12.3-32.2 0-44.5L242.7 256z"/></svg>
               </button>
             </div>
           ))}
@@ -158,6 +157,7 @@ class MultimodalChatInput extends StreamlitComponentBase<State> {
 
         <div style={{ display: "flex", alignItems: "center" }}>
           <textarea
+          className="img_input"
             value={this.state.textInput}
             onChange={this.handleInputChange}
             onPaste={this.handlePaste}
@@ -168,7 +168,6 @@ class MultimodalChatInput extends StreamlitComponentBase<State> {
               borderRadius: "8px",
               backgroundColor: "white",
               overflow: "auto",
-              color: "white",
               resize: "none",
               border: "1px solid rgb(204, 204, 204)",
               ...(isdisabled ? this.disabledStyle : {}),
