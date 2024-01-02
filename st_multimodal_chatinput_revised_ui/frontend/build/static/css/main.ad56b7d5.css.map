@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.ad56b7d5.css","mappings":"AAAA,0CACI,qBAAsB,CACtB,YACJ","sources":["styles.css"],"sourcesContent":[".img_input:focus,.img_input:focus-visible{\r\n    border: 1px solid gray;\r\n    outline: none;\r\n}"],"names":[],"sourceRoot":""}
