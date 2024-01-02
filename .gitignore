@@ -1,0 +1,5 @@
+build/
+dist/
+node_modules/
+node/
+st_multimodal_chatinput.egg-info/
