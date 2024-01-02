@@ -31,7 +31,3 @@ chatinput = multimodal_chatinput()
 uploaded_images = chatinput["uploadedImages"] ##list of base64 encodings of uploaded images
 text = chatinput["textInput"] ##submitted text
 ```
-
-## Contributing
-
-Pull requests for some of the to-dos are more than welcome. 
