@@ -16,7 +16,7 @@ A Streamlit component that enables a rich multimodal chat interface, allowing us
 To install the component, run the following command:
 
 ```sh
-pip install st-multimodal-chatinput
+pip install {git_link}
 ```
 
 ## Usage instructions
