@@ -1,5 +1,5 @@
 import streamlit as st
-from st_multimodal_chatinput import multimodal_chatinput
+from st_multimodal_chatinput_revised_ui import multimodal_chatinput
 
  ##hack to make sure that chatinput is always at the bottom of the page
  ##will only work if multimodal_chatinput is called inside the first st.container of the page
@@ -31,4 +31,3 @@ with st.container():
 
 if user_inp:
     st.write(user_inp)
-
