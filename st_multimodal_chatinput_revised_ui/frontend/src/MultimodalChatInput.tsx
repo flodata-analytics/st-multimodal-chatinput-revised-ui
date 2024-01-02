@@ -22,7 +22,7 @@ class MultimodalChatInput extends StreamlitComponentBase<State> {
   }
 
   handleInputChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
-    this.setState({ textInput: event.target.value })
+    // this.setState({ textInput: event.target.value })
   }
 
   handleImageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -157,11 +157,10 @@ class MultimodalChatInput extends StreamlitComponentBase<State> {
 
         <div style={{ display: "flex", alignItems: "center" }}>
           <textarea
-            disabled={isdisabled}
             value={this.state.textInput}
             onChange={this.handleInputChange}
             onPaste={this.handlePaste}
-            placeholder="Type a message..."
+            placeholder="Paste image (Ctrl+V)"
             style={{
               flexGrow: 1,
               padding: "8px",
@@ -170,6 +169,7 @@ class MultimodalChatInput extends StreamlitComponentBase<State> {
               overflow: "auto",
               color: "white",
               pointerEvents: "none",
+              resize: "none",
               border: "1px solid rgb(204, 204, 204)",
               ...(isdisabled ? this.disabledStyle : {}),
             }}
@@ -202,6 +202,7 @@ class MultimodalChatInput extends StreamlitComponentBase<State> {
               height="16"
               width="14"
               viewBox="0 0 448 512"
+              fill="grey"
             >
               <path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" />
             </svg>
