@@ -119,7 +119,7 @@ class MultimodalChatInput extends StreamlitComponentBase<State> {
               style={{
                 position: "relative",
                 display: "inline-block",
-                margin: "5px",
+                margin: "0px 5px 5px 5px",
                 transition: "0.3s",
                 borderRadius: "5px",
                 overflow: "hidden",
@@ -140,6 +140,7 @@ class MultimodalChatInput extends StreamlitComponentBase<State> {
                   background: "red",
                   color: "white",
                   borderRadius: "50%",
+                  border: "none",
                   width: "15px",
                   height: "15px",
                   fontSize: "10px",
@@ -149,7 +150,7 @@ class MultimodalChatInput extends StreamlitComponentBase<State> {
                   ...(isdisabled ? this.disabledStyle : {}),
                 }}
               >
-                ×
+                <div>×</div>
               </button>
             </div>
           ))}
@@ -168,11 +169,11 @@ class MultimodalChatInput extends StreamlitComponentBase<State> {
               backgroundColor: "white",
               overflow: "auto",
               color: "white",
-              pointerEvents: "none",
               resize: "none",
               border: "1px solid rgb(204, 204, 204)",
               ...(isdisabled ? this.disabledStyle : {}),
             }}
+            rows = {1}
             onKeyDown={(e) => {
               if (e.key === "Enter" && !e.shiftKey) {
                 // Only ENTER -> Emulate send button press
