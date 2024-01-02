@@ -109,7 +109,7 @@ class MultimodalChatInput extends StreamlitComponentBase<State> {
           borderRadius: "8px",
           padding: "8px",
           width: width,
-          background: "#f0f2f6",
+          background: "rgb(240, 242, 246)",
         }}
       >
         <div style={{ display: "flex", alignItems: "center" }}>
