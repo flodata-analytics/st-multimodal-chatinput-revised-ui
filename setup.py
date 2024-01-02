@@ -6,14 +6,14 @@ this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
 setuptools.setup(
-    name="st-multimodal-chatinput",
-    version="0.1.6",
-    author="Het Patel",
-    author_email="2522het.patel@gmail.com",
+    name="st-st_multimodal_chatinput_revised_ui",
+    version="1.0",
+    author="FloData",
+    author_email="",
     description="Streamlit component that allows you to accept multi-modal inputs through a chat interface.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/het-25/st-multimodal-chatinput",
+    url="https://github.com/flodata-analytics/st-multimodal-chatinput-revised-ui",
     packages=setuptools.find_packages(),
     include_package_data=True,
     classifiers=[],

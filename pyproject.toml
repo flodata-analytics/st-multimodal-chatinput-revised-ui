@@ -3,15 +3,15 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-name = "st-multimodal-chatinput"
+name = "st_multimodal_chatinput_revised_ui"
 version = "0.1.0"
 description = "Streamlit component that allows you to accept multi-modal inputs through a chat interface."
 authors = ["Het Patel <2522het.patel@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-homepage = "https://github.com/het-25/st-multimodal-chatinput"
-repository = "https://github.com/het-25/st-multimodal-chatinput"
-documentation = "https://github.com/het-25/st-multimodal-chatinput"
+homepage = "https://github.com/flodata-analytics/st-multimodal-chatinput-revised-ui"
+repository = "https://github.com/flodata-analytics/st-multimodal-chatinput-revised-ui"
+documentation = "https://github.com/flodata-analytics/st-multimodal-chatinput-revised-ui"
 classifiers = []
 
 [tool.poetry.dependencies]
